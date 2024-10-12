@@ -1,0 +1,1 @@
+(()=>{function e(){let e=200-window.innerWidth/window.innerWidth*20;document.querySelector("header").style.background=`linear-gradient(${e}, rgb(0, 234, 230) 70%, white 50%)`}window.addEventListener("resize",e()),e()})();

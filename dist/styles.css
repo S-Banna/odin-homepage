@@ -1,0 +1,82 @@
+body {
+    font-family: "Afacad", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(0, 234, 230) 70%, white 50%);
+    padding-bottom: 20px;
+}
+
+.headOne {
+    background-image: url("images/blank-profile-picture-973460_1280.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-width: calc(100px + 20vw);
+    height: 400px;
+    position: relative;
+    margin: max(10px, 2vw);
+}
+
+.headName {
+    min-width: 100%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+    font-size: 32px;
+}
+
+.headTwo {
+    background-color: white;
+    margin: max(10px, 2vw);
+    padding: 2vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px teal;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-top: 1.25vw;
+    padding-bottom: 0.25vw;
+    gap: 20px;
+}
+
+.links a {
+    min-height: 40px;
+    min-width: 40px;
+}
+
+@media screen and (max-width: 568px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+
+    .headOne {
+        margin-bottom: 0;
+        height: calc(90vw - 50px);
+        width: calc(90vw - 50px);
+    }
+
+    .headTwo {
+        width: 96%;
+        margin-bottom: 0;
+        width: calc(90vw - 50px);
+    }
+}
