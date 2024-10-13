@@ -126,6 +126,38 @@ h2 {
     margin-right: 10px;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to top left, rgb(0, 234, 230) 70%, white 50%);
+}
+
+.footerOne {
+    background-color: white;
+    margin: max(10px, 2vw);
+    padding: 2vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px teal;
+}
+
+.footTwo {
+    background-image: url("images/blank-profile-picture-973460_1280.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-width: calc(100px + 20vw);
+    height: 400px;
+    position: relative;
+    margin: max(10px, 2vw);
+    box-shadow: 1px 1px 2px 2px grey;
+}
+
 @media screen and (max-width: 568px) {
     body {
         font-size: 16px;
@@ -142,6 +174,39 @@ h2 {
     }
 
     .headTwo {
+        width: 96%;
+        margin-bottom: 0;
+        width: calc(90vw - 50px);
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footTwo {
+        margin-bottom: 0;
+        height: calc(90vw - 50px);
+        width: calc(90vw - 50px);
+    }
+
+    .footerOne {
+        width: 96%;
+        margin-bottom: 0;
+        width: calc(90vw - 50px);
+    }
+}
+
+@media screen and (max-width: 800px) {  
+    footer {
+        flex-direction: column;
+    }
+
+    .footTwo {
+        height: calc(60vw - 50px);
+        width: calc(60vw - 50px);
+    }
+
+    .footerOne {
         width: 96%;
         margin-bottom: 0;
         width: calc(90vw - 50px);
