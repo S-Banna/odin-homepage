@@ -22,6 +22,7 @@ header {
     height: 400px;
     position: relative;
     margin: max(10px, 2vw);
+    box-shadow: 1px 1px 2px 2px grey;
 }
 
 .headName {
@@ -57,6 +58,72 @@ header {
 .links a {
     min-height: 40px;
     min-width: 40px;
+}
+
+.bodyCont {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.projectsGrid {
+    display: grid;
+    gap: 40px;
+    margin: 5vw;
+    margin-top: 0;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    place-items: center;
+    min-width: 50vw;
+    max-width: min(900px, 95vw);
+}
+
+.project {
+    background-color: rgb(216, 251, 255);
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+
+.projImg {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.projImg img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.projText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projText * {
+    margin: 0px;
+}
+
+.projLinks {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 568px) {
